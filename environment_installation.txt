@@ -1,0 +1,8 @@
+conda create --name raul python
+conda activate raul  
+pip install uv
+uv pip install -r requirements.txt
+cd ipn/15_2025A/raul
+
+git clone https://github.com/PriorLabs/tabpfn-extensions
+pip install -e tabpfn-extensions[all]
